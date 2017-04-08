@@ -1,7 +1,7 @@
 {
-  "name": "json-property",
-  "description": "Print JSON property to stdout",
-  "version": "0.0.6",
+  "name": "node-package-info",
+  "description": "Get local Node.js package version from its package.json",
+  "version": "0.0.0",
   "bin": "index.js",
   "preferGlobal": true,
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
@@ -11,11 +11,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ksxnodeapps/json-property.git"
+    "url": "https://github.com/ksxnodeapps/node-package-info.git"
   },
-  "dependencies": {
-    "get-stdin": "^5.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "standard": "^10.0.1"
   },
@@ -27,12 +25,14 @@
   },
   "keywords": [
     "json",
+    "json-cli",
+    "package",
+    "info",
     "property",
-    "properties",
-    "json-cli"
+    "properties"
   ],
   "bugs": {
-		"url": "https://github.com/ksxnodeapps/json-property/issues"
+		"url": "https://github.com/ksxnodeapps/node-package-info/issues"
 	},
-	"homepage": "https://github.com/ksxnodeapps/json-property#readme"
+	"homepage": "https://github.com/ksxnodeapps/node-package-info#readme"
 }

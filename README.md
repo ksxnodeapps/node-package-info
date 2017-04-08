@@ -1,22 +1,16 @@
-# json-property
-Print JSON property to stdout
+# node-package-info
+Get local Node.js package version from its `package.json`
 
 ## Installation
 
-```
-npm install --global json-property
+```bash
+npm install --global get-package-info
 ```
 
 ## Command-line usage
 
-```bash
-json-property file.json property_name_1 property_name_2 property_name_3
 ```
-
-```bash
-json-property property_name_1 property_name_2 property_name_3 < file.json
-```
-
-```bash
-cat file.json | json-property property_name_1 property_name_2 property_name_3
+$ node-package-info package
+$ node-package-info package property
+$ node-package-info package [properties]
 ```

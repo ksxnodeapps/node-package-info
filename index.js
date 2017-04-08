@@ -1,14 +1,11 @@
 #! /usr/bin/env node
 'use strict'
 
-const {resolve} = require('path')
-const {readFileSync} = require('fs')
+const {join} = require('path')
 const process = require('process')
-const getStdIn = require('get-stdin')
+const yaml = require('js-yaml')
 const {getOwnPropertyDescriptor} = Object
-const {parse, stringify} = JSON
 const {exit, argv} = process
-const usefulargv = argv.slice(2)
 const {info, error} = global.console
 
 const success = message => {
@@ -28,17 +25,11 @@ const getprop = (object, property) => {
   return descriptor.value
 }
 
-const main = (json, field) =>
-  success(stringify(field.reduce(getprop, parse(json)), undefined, 2))
+const dump = x =>
+  typeof x === 'object' && x ? yaml.dump(x) : String(x)
 
-getStdIn()
-  .then(
-    value => {
-      const string = String(value)
-      if (string) return main(string, usefulargv)
-      const [file, ...field] = usefulargv
-      if (!file) failure(readFileSync(resolve(__dirname, 'help.txt'), 'utf8'), 0)
-      return main(readFileSync(file, 'utf8'), field)
-    }
-  )
-  .catch(failure)
+const [mdlname, ...field] = argv.slice(2)
+mdlname || failure('Missing argument')
+
+const pkgobject = require(join(mdlname, 'package.json'))
+success(dump(field.reduce(getprop, pkgobject)))
