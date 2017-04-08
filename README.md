@@ -4,7 +4,7 @@ Get local Node.js package version from its `package.json`
 ## Installation
 
 ```bash
-npm install --global get-package-info
+npm install --global node-package-info
 ```
 
 ## Command-line usage
