@@ -1,7 +1,7 @@
 {
   "name": "node-package-info",
   "description": "Get local Node.js package information from its package.json",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "bin": "index.js",
   "preferGlobal": true,
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
