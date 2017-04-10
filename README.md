@@ -1,5 +1,5 @@
 # node-package-info
-Get local Node.js package version from its `package.json`
+Get local Node.js package information from its `package.json`
 
 ## Installation
 
