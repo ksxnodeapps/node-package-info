@@ -1,6 +1,6 @@
 {
   "name": "node-package-info",
-  "description": "Get local Node.js package version from its package.json",
+  "description": "Get local Node.js package information from its package.json",
   "version": "0.0.3",
   "bin": "index.js",
   "preferGlobal": true,
