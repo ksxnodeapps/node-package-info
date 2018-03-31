@@ -14,10 +14,10 @@
     "url": "https://github.com/ksxnodeapps/node-package-info.git"
   },
   "dependencies": {
-    "js-yaml": "^3.8.3"
+    "js-yaml": "^3.11.0"
   },
   "devDependencies": {
-    "standard": "^10.0.1"
+    "standard": "^11.0.1"
   },
   "scripts": {
     "remake-package-json": "node sh/remake-package-json",
@@ -34,7 +34,7 @@
     "properties"
   ],
   "bugs": {
-		"url": "https://github.com/ksxnodeapps/node-package-info/issues"
-	},
-	"homepage": "https://github.com/ksxnodeapps/node-package-info#readme"
+    "url": "https://github.com/ksxnodeapps/node-package-info/issues"
+  },
+  "homepage": "https://github.com/ksxnodeapps/node-package-info#readme"
 }
